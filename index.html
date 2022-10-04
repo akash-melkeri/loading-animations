@@ -22,7 +22,7 @@
   </script>
   <style>
     .LOGO_MAIN div div{
-      animation:rotater 4s linear infinite
+      animation:rotater 900ms ease-in-out infinite
     }
     .TITLE_MAIN div:nth-child(2){
       animation:width_raise 3s linear infinite
@@ -59,14 +59,10 @@
 
     @keyframes rotater{
       0%{
-        height:1.5rem;
         transform: rotate(0deg);
-        width:1.5rem;
       }
       100%{
-        height:1.5rem;
-        transform: rotate(360deg);
-        width:1.5rem;
+        transform: rotate(90deg);
       }
     }
   </style>
@@ -74,9 +70,9 @@
 <body class="bg-dark">
   <div class="bg-primary text-white h-14 flex items-center">
     <div class="LOGO_MAIN ml-4">
-      <div class="h-8 w-8 bg-white rounded-full flex justify-center items-center">
-        <div class="h-5 w-5 bg-primary ">
-        </div>
+      <div class="h-8 w-8 bg-white rounded-full relative flex justify-center items-center">
+        <div class="bg-primary h-6 w-1 pt-8 absolute"></div>
+        <div class="bg-primary h-1 w-6 pl-8 absolute"></div>
       </div>
     </div>
     <div class="TITLE_MAIN ml-4 flex flex-row items-center font-bold text-2xl">
