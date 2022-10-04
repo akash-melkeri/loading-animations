@@ -14,6 +14,7 @@
         extend: {
           colors: {
             primary: '#8866ed',
+            primary_darker:'#5d47a1',
             dark: '#171717',
           }
         }
@@ -87,9 +88,13 @@
       
     </div>
     <div class="grow"></div>
-    <div class="flex flex-row mr-4 ">
-      <div class="mr-4">Github</div>
-      <div>Instagram</div>
+    <div class="flex flex-row mr-4 items-center">
+      <div class=" cursor-pointer">
+        <span class=" hover:bg-primary_darker py-1 px-2 rounded">Github</span>
+      </div>
+      <div >
+        <a class=" hover:bg-primary_darker py-1 px-2 rounded" href="https://www.instagram.com/enchanted.phantom/" target="_blank">Instagram</a>
+      </div>
     </div>
   </div>
   <div class="list">
