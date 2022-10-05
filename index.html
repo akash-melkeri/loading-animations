@@ -1,79 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loading animations collection</title>
-  <!--CSS and CDN-->
-  <link rel="stylesheet" href="css/index.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#8866ed',
-            primary_darker:'#5d47a1',
-            dark: '#171717',
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    
-  </style>
-</head>
-<body class="bg-dark flex flex-col text-white">
-  <div class="w-full h-screen flex flex-col">
-    <div class="bg-primary text-white h-14 flex items-center">
-      <div class="LOGO_MAIN ml-4">
-        <div class="h-8 w-8 bg-white rounded-full relative flex justify-center items-center">
-          <div class="bg-primary h-6 w-1 pt-8 absolute"></div>
-          <div class="bg-primary h-1 w-6 pl-8 absolute"></div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Loading animations collection</title>
+        <!--CSS and CDN-->
+        <link rel="stylesheet" href="css/index.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            primary: '#8866ed',
+                            primary_darker: '#5d47a1',
+                            dark: '#171717',
+                        },
+                    },
+                },
+            };
+        </script>
+        <style></style>
+    </head>
+    <body class="bg-dark flex flex-col text-white">
+        <div class="w-full h-screen flex flex-col">
+            <div class="bg-primary text-white h-14 flex items-center">
+                <div class="LOGO_MAIN ml-4">
+                    <div class="h-8 w-8 bg-white rounded-full relative flex justify-center items-center">
+                        <div class="bg-primary h-6 w-1 pt-8 absolute"></div>
+                        <div class="bg-primary h-1 w-6 pl-8 absolute"></div>
+                    </div>
+                </div>
+                <div class="TITLE_MAIN ml-4 flex flex-row items-center font-bold text-2xl">
+                    <div class="font-bold text-2xl">Loading</div>
+                    <div class="ml-2 flex flex-row overflow-hidden">
+                        <span class="px-1 mx-0.5">.</span>
+                        <span class="px-1 mx-0.5">.</span>
+                        <span class="px-1 mx-0.5">.</span>
+                    </div>
+                </div>
+                <div class="grow"></div>
+                <div class="flex flex-row mr-4 items-center">
+                    <div class="cursor-pointer">
+                        <a
+                            class="hover:bg-primary_darker py-1 px-2 rounded"
+                            href="https://github.com/akash-melkeri/loading-animations"
+                            target="_blank"
+                            >Github</a
+                        >
+                    </div>
+                    <div>
+                        <a
+                            class="hover:bg-primary_darker py-1 px-2 rounded"
+                            href="https://www.instagram.com/enchanted.phantom/"
+                            target="_blank"
+                            >Instagram</a
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="grow">
+                <iframe src="sub_html/page1.html" class="w-full h-full" name="main_frame" frameborder="0"></iframe>
+            </div>
+            <div class="h-px bg-primary_darker"></div>
+            <div class="pagination flex flex-row text-primary w-full justify-center py-2">
+                <a
+                    class="page_link page_1 bg-white py-2 px-4 border-2 border-primary font-bold mx-1 active_page"
+                    onclick="toggleActivePage(0)"
+                    href="sub_html/page1.html"
+                    target="main_frame"
+                    >1</a
+                >
+                <a
+                    class="page_link page_2 bg-white py-2 px-4 border-2 border-primary font-bold mx-1"
+                    onclick="toggleActivePage(1)"
+                    href="sub_html/page2.html"
+                    target="main_frame"
+                    >2</a
+                >
+                <!-- <a class="page_link page_2 bg-white py-2 px-4 border-2 border-primary font-bold mx-1" onclick="toggleActivePage(1)" href="sub_html/page2.html" target="main_frame">2</a> -->
+            </div>
         </div>
-      </div>
-      <div class="TITLE_MAIN ml-4 flex flex-row items-center font-bold text-2xl">
-        <div class="font-bold text-2xl">
-          Loading
-        </div>
-        <div class="ml-2 flex flex-row overflow-hidden">
-          <span class=" px-1 mx-0.5">.</span>
-          <span class=" px-1 mx-0.5">.</span>
-          <span class=" px-1 mx-0.5">.</span>
-        </div>
-        
-      </div>
-      <div class="grow"></div>
-      <div class="flex flex-row mr-4 items-center">
-        <div class=" cursor-pointer">
-          <a class=" hover:bg-primary_darker py-1 px-2 rounded" href="https://github.com/akash-melkeri/loading-animations" target="_blank">Github</a>
-        </div>
-        <div >
-          <a class=" hover:bg-primary_darker py-1 px-2 rounded" href="https://www.instagram.com/enchanted.phantom/" target="_blank">Instagram</a>
-        </div>
-      </div>
-    </div>
-    <div class="grow">
-      <iframe src="sub_html/page1.html" class="w-full h-full" name="main_frame" frameborder="0"></iframe>
-    </div>
-    <div class="h-px bg-primary_darker"></div>
-    <div class="pagination flex flex-row text-primary w-full justify-center py-2">
-      <a class="page_link page_1 bg-white py-2 px-4 border-2 border-primary font-bold mx-1 active_page" onclick="toggleActivePage(0)" href="sub_html/page1.html" target="main_frame">1</a>
-      <!-- <a class="page_link page_2 bg-white py-2 px-4 border-2 border-primary font-bold mx-1" onclick="toggleActivePage(1)" href="sub_html/page2.html" target="main_frame">2</a> -->
-    </div>
-  </div>
-  
 
-  <script>
-    let current_active_page = 0
-    function toggleActivePage(number){
-      $(".page_link").eq(current_active_page).removeClass('active_page')
-      $(".page_link").eq(number).addClass('active_page')
-      current_active_page = number
-    }
-  </script>
-</body>
+        <script>
+            let current_active_page = 0;
+            function toggleActivePage(number) {
+                $('.page_link').eq(current_active_page).removeClass('active_page');
+                $('.page_link').eq(number).addClass('active_page');
+                current_active_page = number;
+            }
+        </script>
+    </body>
 </html>
