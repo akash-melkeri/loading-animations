@@ -1,12 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading animations - 1</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading animations - 1</title>
+  <link rel="stylesheet" href="../css/page1.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#8866ed',
+            primary_darker:'#5d47a1',
+            dark: '#171717',
+          }
+        }
+      }
+    }
+  </script>
 </head>
 <body class="" style="color:white">
-    page 1
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 p-2 md:p-4">
+    <div class="loader_1 h-48 bg-black text-white rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loading">
+        <div class="box">
+          <div class="box">
+            <div class="box">
+              <div class="box">
+              &nbsp;
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="loader_2 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader"></div>
+    </div>
+    <div class="loader_3 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader flex flex-row flex-wrap gap-x-2 gap-y-1 justify-center items-center">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+    </div>
+    <div class="loader_4 h-48 bg-black text-white rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader flex gap-x-2">
+        <div class="dot b1"></div>
+        <div class="dot b2"></div>
+        <div class="dot b3"></div>
+        <div class="dot b4"></div>
+      </div>
+    </div>
+    <div class="loader_5 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="cont">
+        <div class="loader l1"></div>
+        <div class="loader l2"></div>
+        <div class="loader l3"></div>
+        <div class="loader l4"></div>
+      </div>
+    </div>
+    <div class="loader_6 h-48 bg-black text-white rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loading" data-text="loading...">Loading...</div>
+    </div>
+    <div class="loader_7 h-48 bg-black text-white rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader flex gap-x-2">
+        <div class="square s1"></div>
+        <div class="square s2"></div>
+        <div class="square s3"></div>
+        <div class="square s4"></div>
+      </div>
+    </div>
+    <div class="loader_8 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="cont">
+        <div class="a0"></div>
+      </div>
+    </div>
+<!-- template
+    <div class="loader_n h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader"></div>
+    </div>
+     -->
+  </div>
 </body>
 </html>
