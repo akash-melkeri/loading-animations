@@ -1,10 +1,15 @@
 /*loader 1*/
 .loader_1 .loading{
-    height:100px;
-    width:100px;
-    position:relative;
-    z-index:1;
-    text-align:center;
+   border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid yellow;
+  border-right: 16px solid green;
+  border-bottom: 16px solid grey;
+  border-left: 16px solid pink;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
 }
 .loader_1 .box{
     display: flex;
@@ -18,9 +23,9 @@
     animation:box-rotate 2s linear infinite;
 }
 @keyframes box-rotate{
-    0%{transform:rotate(0deg)}
-    80%{transform:rotate(90deg)}
-    100%{transform:rotate(90deg)}
+    0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 }
 
 /*loader 2*/
