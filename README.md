@@ -4,6 +4,17 @@
 
 This repo is created for Hacktoberfest.
 
+Welcome,
+This is a collection of simple loading animations.
+
+Use plain css and @keyframes to animate and design the loading animation.
+
+Each page should contain only 8 animations.
+If there is no more space on the latest page, Use page template to create a new page.
+Also, dont forget to add it to pagination on index.html
+Always add your loading animations at last.
+they will be sorted automatically.
+
 For CONTRIBUTORS :
 
   - Pull requests can be made in any GITHUB or GITLAB hosted project that’s participating in Hacktoberfest (look for the “hacktoberfest” topic)
