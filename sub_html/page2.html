@@ -1,131 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Loading animations - 2</title>
-        <link rel="stylesheet" href="../css/page2.css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <script>
-            tailwind.config = {
-                theme: {
-                    extend: {
-                        colors: {
-                            primary: '#8866ed',
-                            primary_darker: '#5d47a1',
-                            dark: '#171717',
-                        },
-                    },
-                },
-            };
-        </script>
-    </head>
-    <body class="" style="color: white">
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 p-2 md:p-4">
-          
-            <div
-                class="loader_1 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center"
-            >
-                <div class="loader">
-                    <div class="spinner-grow inline-block w-8 h-8 bg-current rounded-full opacity-0 text-blue-600" role="status">
-                        <span class="visually-hidden">Loading...</span>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="loader_2 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center"
-            >
-                <div class="loader">
-                    <div class="wrapper">
-                        <div class="div1 h-3 bg-blue-600"></div>
-                        <div class="div2 h-3 bg-blue-600"></div>
-                        <div class="div3 h-3 bg-blue-600"></div>
-                        <span>Loading</span>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="loader_3 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center"
-            >
-                <div class="loader">
-                    <div class="spinner bg-blue-600"></div>
-                </div>
-            </div>
-            <div
-                class="loader_4 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center"
-            >
-                <div class="loader">
-                    <div class="chase">
-                        <div class="chase-dot"></div>
-                        <div class="chase-dot"></div>
-                        <div class="chase-dot"></div>
-                        <div class="chase-dot"></div>
-                        <div class="chase-dot"></div>
-                        <div class="chase-dot"></div>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="loader_5 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center"
-            >
-                <div class="loader">
-                    <div class="spinner">
-                        <div class="double-bounce1"></div>
-                        <div class="double-bounce2"></div>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="loader_6 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center"
-            >
-                <div class="loader">
-                    <div class="circle">
-                        <div class="circle1 child"></div>
-                        <div class="circle2 child"></div>
-                        <div class="circle3 child"></div>
-                        <div class="circle4 child"></div>
-                        <div class="circle5 child"></div>
-                        <div class="circle6 child"></div>
-                        <div class="circle7 child"></div>
-                        <div class="circle8 child"></div>
-                        <div class="circle9 child"></div>
-                        <div class="circle10 child"></div>
-                        <div class="circle11 child"></div>
-                        <div class="circle12 child"></div>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="loader_7 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center"
-            >
-                <div class="loader">
-                    <div class="cube-grid">
-                        <div class="cube cube1"></div>
-                        <div class="cube cube2"></div>
-                        <div class="cube cube3"></div>
-                        <div class="cube cube4"></div>
-                        <div class="cube cube5"></div>
-                        <div class="cube cube6"></div>
-                        <div class="cube cube7"></div>
-                        <div class="cube cube8"></div>
-                        <div class="cube cube9"></div>
-                    </div>
-                </div>
-            </div>
-            <div
-                class="loader_8 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center"
-            >
-                <div class="loader">
-                    <div class="folding-cube">
-                        <div class="cube1 cube"></div>
-                        <div class="cube2 cube"></div>
-                        <div class="cube4 cube"></div>
-                        <div class="cube3 cube"></div>
-                    </div>
-                </div>
-            </div>
-          <div class="loader_9 h-48 bg-black text-white rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading animations - 2</title>
+  <link rel="stylesheet" href="../css/page2.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#8866ed',
+            primary_darker: '#5d47a1',
+            dark: '#171717',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="" style="color: white">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 p-2 md:p-4">
+
+    <div
+      class="loader_1 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader">
+        <div class="spinner-grow inline-block w-8 h-8 bg-current rounded-full opacity-0 text-blue-600" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="loader_2 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader">
+        <div class="wrapper">
+          <div class="div1 h-3 bg-blue-600"></div>
+          <div class="div2 h-3 bg-blue-600"></div>
+          <div class="div3 h-3 bg-blue-600"></div>
+          <span>Loading</span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="loader_3 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader">
+        <div class="spinner bg-blue-600"></div>
+      </div>
+    </div>
+    <div
+      class="loader_4 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader">
+        <div class="chase">
+          <div class="chase-dot"></div>
+          <div class="chase-dot"></div>
+          <div class="chase-dot"></div>
+          <div class="chase-dot"></div>
+          <div class="chase-dot"></div>
+          <div class="chase-dot"></div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="loader_5 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader">
+        <div class="spinner">
+          <div class="double-bounce1"></div>
+          <div class="double-bounce2"></div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="loader_6 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader">
+        <div class="circle">
+          <div class="circle1 child"></div>
+          <div class="circle2 child"></div>
+          <div class="circle3 child"></div>
+          <div class="circle4 child"></div>
+          <div class="circle5 child"></div>
+          <div class="circle6 child"></div>
+          <div class="circle7 child"></div>
+          <div class="circle8 child"></div>
+          <div class="circle9 child"></div>
+          <div class="circle10 child"></div>
+          <div class="circle11 child"></div>
+          <div class="circle12 child"></div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="loader_7 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader">
+        <div class="cube-grid">
+          <div class="cube cube1"></div>
+          <div class="cube cube2"></div>
+          <div class="cube cube3"></div>
+          <div class="cube cube4"></div>
+          <div class="cube cube5"></div>
+          <div class="cube cube6"></div>
+          <div class="cube cube7"></div>
+          <div class="cube cube8"></div>
+          <div class="cube cube9"></div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="loader_8 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader">
+        <div class="folding-cube">
+          <div class="cube1 cube"></div>
+          <div class="cube2 cube"></div>
+          <div class="cube4 cube"></div>
+          <div class="cube3 cube"></div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="loader_9 h-48 bg-black text-white rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
       <div class="justify-center items-center bg-black">
         <div class="loader bg-white p-5 rounded-full flex space-x-3">
           <div class="w-5 h-5 bg-gray-800 rounded-full animate-bounce"></div>
@@ -133,17 +128,18 @@
           <div class="w-5 h-5 bg-gray-800 rounded-full animate-bounce"></div>
         </div>
       </div>
+    </div>
 
-    <div class="loader_10 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+    <div
+      class="loader_10 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
       <div class="loader ">
         <div class="flex justify-center items-center">
           <div class="spinner-border animate-spin inline-block w-8 h-8 rounded-full " role="status">
-           <img src="./plus.svg" alt="" srcset="">
+            <img src="./plus.svg" alt="" srcset="">
           </div>
         </div>
       </div>
     </div>
-        </div>
-    </body>
-</html>
+</body>
 
+</html>
