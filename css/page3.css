@@ -477,16 +477,6 @@
 
 
 /* for demo */
-body{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  min-height:100vh;
-  padding:1rem 1rem 2rem 1rem;
-  box-sizing:border-box;
-  overflow:hidden;
-}
 
 .title{
   color:var(--color-crayon);
