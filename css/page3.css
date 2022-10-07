@@ -1,0 +1,137 @@
+
+/* Loader 9*/
+.loader div {
+    animation-duration: 0.5s;
+  }
+  
+  .loader div:first-child {
+    animation-delay: 0.1s;
+  }
+  
+  .loader div:nth-child(2) {
+    animation-delay: 0.3s;
+  }
+  
+  .loader div:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+ 
+/* new loader */
+bodY {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center {
+  height: 29vh;
+  width: 54vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+}
+.wave {
+  width: 3px;
+  height: 75px;
+  background: linear-gradient(45deg, cyan, #fff);
+  margin: 10px;
+  animation: wave 1s linear infinite;
+  border-radius: 20px;
+}
+.wave:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.wave:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.wave:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.wave:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.wave:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.wave:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.wave:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.wave:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.wave:nth-child(10) {
+  animation-delay: 0.9s;
+}
+
+@keyframes wave {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+/* loader 10 */
+
+.loader-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.loader-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.loader-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: loader-ellipsis1 0.6s infinite;
+}
+.loader-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: loader-ellipsis2 0.6s infinite;
+}
+.loader-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: loader-ellipsis2 0.6s infinite;
+}
+.loader-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: loader-ellipsis3 0.6s infinite;
+}
+@keyframes loader-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes loader-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes loader-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
+}

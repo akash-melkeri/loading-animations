@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading animations - 3</title>
+  <link rel="stylesheet" href="../css/page3.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#8866ed',
+            primary_darker:'#5d47a1',
+            dark: '#171717',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="" style="color:white">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 p-2 md:p-4">
+    <div class="loader_9 h-48 bg-black text-white rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="justify-center items-center bg-black">
+        <div class="loader bg-white p-5 rounded-full flex space-x-3">
+          <div class="w-5 h-5 bg-gray-800 rounded-full animate-bounce"></div>
+          <div class="w-5 h-5 bg-gray-800 rounded-full animate-bounce"></div>
+          <div class="w-5 h-5 bg-gray-800 rounded-full animate-bounce"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- new loader -->
+    <div class="loader_10 h-48 bg-white text-black overflow-hidden rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader">
+        <div class="center">
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+          <div class="wave"></div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="loader_11 h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader ">
+        <div class="flex justify-center items-center">
+          <div class="spinner-border animate-spin inline-block w-8 h-8 rounded-full " role="status">
+            <img src="./plus.svg" alt="" srcset="">
+          </div>
+        </div>
+        </div>
+        </div>
+    <div class="loader_12 h-48 bg-black text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+		<!-- template
+    <div class="loader_n h-48 bg-white text-black rounded outline outline-offset-2 outline-1 outline-white flex justify-center items-center">
+      <div class="loader"></div>
+    </div>
+    -->
+	</div>
+</body>
+</html>
