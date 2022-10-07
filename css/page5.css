@@ -67,3 +67,46 @@
     transform: rotate(180deg) scale(.8);
     text-shadow: 10px 10px 7px rgba(0,0,0,.1);
 }
+
+.container {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;  
+}
+.eclipse {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 10px solid rgb(0, 0, 0);
+    border-right: 10px solid rgb(255, 255, 255);
+    border-bottom: 10px solid rgb(255, 255, 255);
+    animation: spin 3s cubic-bezier(0.6, 0.2, 0.5, 0.8) infinite;
+}
+
+.cover-inner {
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: -4%;
+    left:-4%;
+    border-radius: 50%;
+    border: 0px solid rgb(0, 0, 0);
+    animation: spin 3s cubic-bezier(0.6, 0.2, 0.5, 0.8) infinite;
+}
+
+.cover-outer {
+    width: 95px;
+    height: 95px;
+    box-sizing: content-box;
+    border-radius: 50%;
+    border: 30px solid rgb(0, 0, 0);
+   
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
