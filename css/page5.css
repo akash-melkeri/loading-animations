@@ -67,3 +67,25 @@
     transform: rotate(180deg) scale(.8);
     text-shadow: 10px 10px 7px rgba(0,0,0,.1);
 }
+/*loader_2*/
+
+body {
+    background-color:#202628;
+}
+.main {
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:100vh;
+}
+.loader_2 polygon{
+    stroke:#c0c0c0;
+    stroke-dasharray:17;
+    animation:triangle 2.5s cubic-bezier(0.35, 0.04, 0.63, 0.95) infinite;
+}
+@keyframes triangle{
+    to{
+        stroke:#ebf308;
+        stroke-dashoffset:-136;
+    }
+}
