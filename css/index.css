@@ -9,6 +9,16 @@
     color:white !important;
     border-color: white !important;
   }
+
+  footer {  
+    background-color: #8866ed;
+    padding: 30px;
+    font-size: 80%;
+    text-align: center;
+    margin-top: 20px;
+    font-weight:bolder;
+   }
+
   @keyframes width_raise{
     0%{
       width:0rem;
