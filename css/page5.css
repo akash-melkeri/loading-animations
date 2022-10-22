@@ -67,3 +67,70 @@
     transform: rotate(180deg) scale(.8);
     text-shadow: 10px 10px 7px rgba(0,0,0,.1);
 }
+
+
+
+
+
+/* Loading */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Reem+Kufi+Fun:wght@500&display=swap");
+:root{
+  --color: #ffee10;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Reem Kufi Fun", sans-serif;
+}
+
+body {
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.loading {
+  position: relative;
+}
+.loading span {
+  position: relative;
+  display: inline-block;
+  font-size: 80px;
+/*   if you want only one color then you uncomment this  */
+/*   color: var(--color); */
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+.l{
+  color: #FF9933;
+}
+.o{
+  color: #FF9933;
+}
+.a{
+  color: #FFFFFF;
+}
+.d{
+  color: #000080;
+}
+.i{
+  color: #FFFFFF;
+}
+.n{
+  color: #138808;
+}
+.g{
+  color: #138808;
+}
+.dot{
+  color: #fff;
+}
+
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
