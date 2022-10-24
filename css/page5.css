@@ -68,10 +68,55 @@
     text-shadow: 10px 10px 7px rgba(0,0,0,.1);
 }
 
-.loader_2 .center{
+
+
+
+
+/* Loading */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Reem+Kufi+Fun:wght@500&display=swap");
+
+.loader_3 .loading {
   position: relative;
-  width: 0px;
-  height: 60px;
+}
+.loader_3 .loading span {
+  position: relative;
+  display: inline-block;
+  font-size: 80px;
+/*   if you want only one color then you uncomment this  */
+/*   color: var(--color); */
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+.loader_3 .l{
+  color: #FF9933;
+}
+.loader_3 .o{
+  color: #FF9933;
+}
+.loader_3 .a{
+  color: #FFFFFF;
+}
+.loader_3 .d{
+  color: #000080;
+}
+.loader_3 .i{
+  color: #FFFFFF;
+}
+.loader_3 .n{
+  color: #138808;
+}
+.loader_3 .g{
+  color: #138808;
+}
+.loader_3 .dot{
+  color: #fff;
+}
+
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
 }
 
 @keyframes loading{
@@ -89,6 +134,12 @@
     height: 50px;
     top: 0px;
   }
+}
+
+.loader_2 .center{
+  position: relative;
+  width: 0px;
+  height: 60px;
 }
 
 .loader_2 #loading{
