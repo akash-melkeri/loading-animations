@@ -68,12 +68,10 @@
     text-shadow: 10px 10px 7px rgba(0,0,0,.1);
 }
 
-.center{
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.loader_2 .center{
+  position: relative;
+  width: 0px;
+  height: 60px;
 }
 
 @keyframes loading{
@@ -93,9 +91,9 @@
   }
 }
 
-#loading{
+.loader_2 #loading{
   position:absolute;
-  background-color: #000000;
+  background-color: red;
   height: 50px;
   width: 15px;
   animation-name: loading;
@@ -103,12 +101,12 @@
   animation-iteration-count: infinite;
 }
 
-#loading.loading1{
+.loader_2 #loading.loading1{
   left:-25px;
   animation-delay: 0.2s;
 }
 
-#loading.loading2{
+.loader_2 #loading.loading2{
   left:0px;
   animation-delay: 0.4s;
 }
