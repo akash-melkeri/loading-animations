@@ -50,27 +50,27 @@
           <a class=" hover:bg-primary_darker py-1 px-2 rounded" href="https://github.com/akash-melkeri/loading-animations" target="_blank">Github</a>
         </div>
         <div >
-          <a class=" hover:bg-primary_darker py-1 px-2 rounded" href="https://www.instagram.com/enchanted.phantom/" target="_blank">Instagram</a>
+          <a class=" hover:bg-primary_darker py-1 px-2 rounded" href="https://www.instagram.com/a.k.a.s.h.h.h.h.h.h/" target="_blank">Instagram</a>
         </div>
       </div>
     </div>
     <div class="grow">
-      <iframe src="sub_html/page4.html" class="w-full h-full" name="main_frame" frameborder="0"></iframe>
+      <iframe src="sub_html/page5.html" class="w-full h-full" name="main_frame" frameborder="0"></iframe>
     </div>
     <div class="h-px bg-primary_darker"></div>
     <div class="pagination flex flex-row text-primary w-full justify-center py-2">
       <a class="page_link page_1 bg-white py-2 px-4 border-2 border-primary font-bold mx-1" onclick="toggleActivePage(0)" href="sub_html/page1.html" target="main_frame">1</a>
       <a class="page_link page_2 bg-white py-2 px-4 border-2 border-primary font-bold mx-1" onclick="toggleActivePage(1)" href="sub_html/page2.html" target="main_frame">2</a>
       <a class="page_link page_2 bg-white py-2 px-4 border-2 border-primary font-bold mx-1" onclick="toggleActivePage(2)" href="sub_html/page3.html" target="main_frame">3</a>
-      <a class="page_link page_2 bg-white py-2 px-4 border-2 border-primary font-bold mx-1 active_page" onclick="toggleActivePage(3)" href="sub_html/page4.html" target="main_frame">4</a>
-      <a class="page_link page_2 bg-white py-2 px-4 border-2 border-primary font-bold mx-1" onclick="toggleActivePage(4)" href="sub_html/page5.html" target="main_frame">5</a>
+      <a class="page_link page_2 bg-white py-2 px-4 border-2 border-primary font-bold mx-1" onclick="toggleActivePage(3)" href="sub_html/page4.html" target="main_frame">4</a>
+      <a class="page_link page_2 bg-white py-2 px-4 border-2 border-primary font-bold mx-1 active_page" onclick="toggleActivePage(4)" href="sub_html/page5.html" target="main_frame">5</a>
       <!-- <a class="page_link page_3 bg-white py-2 px-4 border-2 border-primary font-bold mx-1" onclick="toggleActivePage(2)" href="sub_html/page3.html" target="main_frame">3</a> -->
     </div>
   </div>
   
 
   <script>
-    let current_active_page = 3
+    let current_active_page = 4
     function toggleActivePage(number){
       $(".page_link").eq(current_active_page).removeClass('active_page')
       $(".page_link").eq(number).addClass('active_page')
