@@ -169,10 +169,7 @@
 
 /*loader 4*/
 .loader_4 .lds-bar {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+    position: relative;
 }
 
 .bar {
