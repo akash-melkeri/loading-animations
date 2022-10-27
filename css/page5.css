@@ -68,9 +68,25 @@
     text-shadow: 10px 10px 7px rgba(0,0,0,.1);
 }
 
-
-
-
+body{
+    background-color: black;
+}
+h1 {
+    margin-left:490px;
+    margin-top:285px;
+    font-size:4em;
+    letter-spacing:1px;
+    font-weight:bold;
+    font-family:"Montserrat","Helvetica Neue";
+    background:url(./background1.jfif);
+    -webkit-background-clip:text;
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+    animation:text 7.5s linear infinite;
+}
+@keyframes text {
+    from { background-position:0% 50%;}
+    to { background-position:100% 100%;}
 
 /* Loading */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Reem+Kufi+Fun:wght@500&display=swap");
